@@ -5,23 +5,30 @@
 	<style>
 
 		div {
-		  padding: 20px;
-		  margin: 20px;
-		  background: #eee;
+			padding: 20px;
+			margin: 20px;
+			background: #eee;
 		}
 
 		.no-copy p {
-		  -webkit-user-select: none;  /* Chrome all / Safari all */
-		  -moz-user-select: none;     /* Firefox all */
-		  -ms-user-select: none;      /* IE 10+ */
-		  user-select: none;          /* Likely future */     
+			-webkit-user-select: none;  /* Chrome all / Safari all */
+			-moz-user-select: none;     /* Firefox all */
+			-ms-user-select: none;      /* IE 10+ */
+			user-select: none;          /* Likely future */     
 		}
 
 		.all-copy p {  
-		  -webkit-user-select: all;  /* Chrome all / Safari all */
-		  -moz-user-select: all;     /* Firefox all */
-		  -ms-user-select: all;      /* IE 10+ */
-		  user-select: all;          /* Likely future */   
+			-webkit-user-select: all;  /* Chrome all / Safari all */
+			-moz-user-select: all;     /* Firefox all */
+			-ms-user-select: all;      /* IE 10+ */
+			user-select: all;          /* Likely future */   
+		}
+
+		.text-copy p {
+			-webkit-user-select: text-transform: uppercase;  /* Chrome all / Safari all */
+			-moz-user-select: text;     /* Firefox all */
+			-ms-user-select: text;      /* IE 10+ */
+			user-select: text;          /* Likely future */   
 		}
 
 	</style>
@@ -41,6 +48,10 @@
 
 <div class="all-copy">
 	<p>One click selects all this.</p>
+</div>
+
+<div class="text-copy">
+	<p>Just select what you want.</p>
 </div>
 
 </body>

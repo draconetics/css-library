@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Full Keyframe</title>
+	<style>
+		
+.square {
+	display: inline-block;
+	background-color: blue;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	animation: moveBottom 3s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: backwards;//is the same like none
+	//-moz-animation: moveBottom 3s;
+	//-moz-animation-fill-mode: forwards;
+}
+
+
+@keyframes moveBottom {
+	from{top:0px;}
+	to{top:300px;}
+}
+
+.square-backward {
+	display: inline-block;
+	background-color: red;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	animation: moveBottom 4s;
+	animation-timing-function: ease-in;
+	//both is like forwards
+	//diferent position for both, select the first position.
+	animation-fill-mode: both;
+	//-moz-animation: moveBottom 3s;
+	//moz becouse we are using mozilla firefox
+//	-moz-animation-fill-mode: both;
+}
+
+
+@keyframes moveBottom {
+	from{top:0px;}
+	to{top:300px;}
+}
+
+	</style>
+</head>
+<body>
+
+<h1>This is the animation</h1>
+
+<div class="square">Move the square</div>
+<div class="square-backward">Move the square</div>
+
+</body>
+</html>
